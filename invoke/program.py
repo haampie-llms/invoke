@@ -16,9 +16,12 @@ from typing import (
     Type,
 )
 
-from . import Collection, Config, Executor, FilesystemLoader
+from .collection import Collection
 from .completion.complete import complete, print_completion_script
+from .config import Config
 from .exceptions import CollectionNotFound, Exit, ParseError, UnexpectedExit
+from .executor import Executor
+from .loader import FilesystemLoader
 from .parser import Argument, Parser, ParserContext
 from .terminals import pty_size
 from .util import debug, enable_logging, helpline

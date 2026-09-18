@@ -6,7 +6,7 @@ from pathlib import Path
 from types import ModuleType
 from typing import Any, Optional, Tuple
 
-from . import Config
+from .config import Config
 from .exceptions import CollectionNotFound
 from .util import debug
 
